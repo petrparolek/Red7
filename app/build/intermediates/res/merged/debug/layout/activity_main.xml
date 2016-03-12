@@ -17,6 +17,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/red7Logo"
         android:src="@drawable/red7logo"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerRaioChannel"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
