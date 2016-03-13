@@ -18,12 +18,34 @@
         android:id="@+id/red7Logo"
         android:src="@drawable/red7logo"/>
 
-    <Spinner
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinnerRaioChannel"
-        android:layout_gravity="center_horizontal"
-        android:spinnerMode="dropdown" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel"
+            android:id="@+id/textView"
+            android:textColor="#eee"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerRaioChannel"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:textColor="#eee"
+            android:textStyle="bold"
+            android:backgroundTint="#b60000"
+            android:popupBackground="#b60000"
+            android:background="#b60000"
+            />
+    </LinearLayout>
+
 
     <LinearLayout
         android:orientation="horizontal"

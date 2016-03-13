@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -19,12 +20,12 @@ import java.util.List;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private MediaPlayer mp;
+    private MediaPlayer mp = new MediaPlayer();
     private Button buttonPlay;
     private Button buttonStop;
     private Spinner spinnerRaioChannel;
     private HashMap<String, String> channelSCAddressHash = new HashMap<String, String>();
-    private String choosenChannel = "Główny";
+    private String chosenChannel = "Główny";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,25 +38,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         buttonStop.setEnabled(false);
         buttonStop.setOnClickListener(this);
         setupShoutcastAddresses();
-        initializeMP();
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
-        // Enable/disable correct buttons
-        if ( mp.isPlaying() ) {
-
-            buttonPlay.setEnabled(false);
-            buttonStop.setEnabled(true);
-        }
-        else{
-
-            buttonPlay.setEnabled(true);
-            buttonStop.setEnabled(false);
-        }
-
     }
 
     public void onClick(View v) {
@@ -69,17 +57,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private void initializeMP(){
         mp = new MediaPlayer();
         try {
-            mp.setDataSource(channelSCAddressHash.get(choosenChannel));
-//            mp.setDataSource("http://sluchaj.radiors.pl:19182");
+            mp.setDataSource(channelSCAddressHash.get(chosenChannel));
         } catch (IOException e) {
-            Log.e("Red7", "Unable initialize player with address " + channelSCAddressHash.get(choosenChannel));
+            Log.e("Red7", "Unable initialize player with address " + channelSCAddressHash.get(chosenChannel));
             e.printStackTrace();
         }
     }
 
 
     private void startRadio() {
+        Log.d("Red7", "Radio started" );
 
+        initializeMP();
         mp.prepareAsync();
         mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
 
@@ -93,13 +82,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void stopRadio() {
-
-        if ( mp.isPlaying() ) {
-            mp.stop();
-            mp.release();
-            initializeMP();
+        try {
+            if (mp.isPlaying()) {
+                mp.stop();
+                mp.release();
+            }
         }
+        catch(Exception e){
+            Log.d("Red7", "Media player has alredy been released - do nothing" );
 
+        }
         buttonPlay.setEnabled(true);
         buttonStop.setEnabled(false);
     }
@@ -113,23 +105,32 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_spinner_item,channelList);
         spinnerRaioChannel.setAdapter(dataAdapter);
-        // Spinner item selection Listener
         addListenerOnSpinnerItemSelection();
 
-        // Button click Listener
-        addListenerOnButton();
     }
-    // Add spinner data
-
     public void addListenerOnSpinnerItemSelection(){
 
-//        spinnerRaioChannel.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+        spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
+        spinnerRaioChannel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+
+                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
+                chosenChannel = parent.getItemAtPosition(position).toString();
+                //stop radio if playing
+                stopRadio();
+
+                initializeMP();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
-    //get the selected dropdown list value
-
-    public void addListenerOnButton() {
-
-
-    }
 }
