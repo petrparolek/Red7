@@ -300,10 +300,6 @@
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
     },
@@ -332,14 +328,6 @@
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
-    },
-    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
     },
@@ -348,24 +336,12 @@
         "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/home/tomek/Projekty/Red7/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
         "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_lines.xml"
-    },
-    {
-        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
-        "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
@@ -384,11 +360,39 @@
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
-    },
-    {
         "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/tomek/Projekty/Red7/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/custom_spinner.xml",
+        "source": "/home/tomek/Projekty/Red7/app/src/main/res/layout/custom_spinner.xml"
+    },
+    {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
     }
 ]

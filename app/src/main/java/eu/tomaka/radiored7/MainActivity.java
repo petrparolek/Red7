@@ -103,7 +103,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         List<String> channelList = new ArrayList(channelSCAddressHash.keySet());
         Collections.sort(channelList,Collections.reverseOrder());
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_spinner_item,channelList);
+                (this, R.layout.custom_spinner ,channelList);
         spinnerRaioChannel.setAdapter(dataAdapter);
         addListenerOnSpinnerItemSelection();
 
