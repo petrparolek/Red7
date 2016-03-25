@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Radio Red7</string>
     <string name="action_settings">Settings</string>
-    <string name="channel">Kanał</string>
+    <string name="channel">Wybierz kanał</string>
 </resources>

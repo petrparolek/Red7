@@ -34,7 +34,7 @@
 
         <Spinner
             android:layout_width="280dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/spinnerRaioChannel"
             android:layout_gravity="center_horizontal"
             android:spinnerMode="dropdown"
