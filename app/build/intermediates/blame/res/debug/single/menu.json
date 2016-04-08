@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/src/main/res/menu/menu_main.xml"
-    },
-    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
         "source": "/home/tomek/Projekty/Red7/app/src/main/res/menu/menu_main.xml"
     }

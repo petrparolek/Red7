@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -17,6 +18,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+
+import eu.tomaka.radiored7.helpers.ShoutcastParser;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -26,6 +29,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Spinner spinnerRaioChannel;
     private HashMap<String, String> channelSCAddressHash = new HashMap<String, String>();
     private String chosenChannel = "Główny";
+    private TextView streamGenre;
+    private TextView streamTitle;
+    private String genereLabel;
+    private String titleLabel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +42,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
         buttonStop = (Button) findViewById(R.id.buttonStop);
+        streamGenre = (TextView) findViewById(R.id.textViewStreamGenere);
+        streamTitle = (TextView) findViewById(R.id.textViewStreamTitle);
         buttonPlay.setOnClickListener(this);
         buttonStop.setEnabled(false);
         buttonStop.setOnClickListener(this);
         setupShoutcastAddresses();
+        reloadSCInfo();
+
 
     }
 
@@ -123,6 +135,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 stopRadio();
 
                 initializeMP();
+                reloadSCInfo();
 
             }
 
@@ -131,6 +144,38 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             }
         });
+    }
+
+    private void reloadSCInfo(){
+
+        Thread thread = new Thread(new Runnable(){
+            @Override
+            public void run() {
+
+                try {
+                    genereLabel = new ShoutcastParser().getStreamGenere(channelSCAddressHash.get(chosenChannel));
+                    titleLabel = new ShoutcastParser().getStreamTitle(channelSCAddressHash.get(chosenChannel));
+
+                    Log.d("KtoGRA?", genereLabel);
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
+
+        thread.start();
+        try {
+            thread.join();
+            streamGenre.setText(getString(R.string.streamGenere)+" "+genereLabel);
+            streamTitle.setText(getString(R.string.streamTitle)+" "+titleLabel);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

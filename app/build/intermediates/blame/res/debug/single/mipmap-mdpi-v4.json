@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/home/tomek/Pobrane/ANT-Android-SDKs-master/ANT+_Android_SDK/Sample/RadioRed7/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
         "source": "/home/tomek/Projekty/Red7/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
