@@ -33,25 +33,25 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView streamTitle;
     private String genereLabel;
     private String titleLabel;
+    private Integer playerState = 0; // 0 = Stopped; 1 = Playing; 2 = Paused (currently not used)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
         buttonStop = (Button) findViewById(R.id.buttonStop);
         streamGenre = (TextView) findViewById(R.id.textViewStreamGenere);
         streamTitle = (TextView) findViewById(R.id.textViewStreamTitle);
         buttonPlay.setOnClickListener(this);
-        buttonStop.setEnabled(false);
         buttonStop.setOnClickListener(this);
+        setButtonsState();
         setupShoutcastAddresses();
         reloadSCInfo();
 
-
     }
+
 
     @Override
     protected void onPause() {
@@ -78,7 +78,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     private void startRadio() {
-        Log.d("Red7", "Radio started" );
+        Log.d("Red7", "Radio started");
 
         initializeMP();
         mp.prepareAsync();
@@ -88,24 +88,26 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 MainActivity.this.mp.start();
             }
         });
-
-        buttonPlay.setEnabled(false);
-        buttonStop.setEnabled(true);
+        playerState = 1;
+        Log.d("PlayerState", playerState.toString());
+        setButtonsState();
     }
 
     private void stopRadio() {
+        Log.d("Red7", "Stop pressed" );
+
         try {
             if (mp.isPlaying()) {
                 mp.stop();
                 mp.release();
             }
         }
-        catch(Exception e){
+        catch(Exception e) {
             Log.d("Red7", "Media player has alredy been released - do nothing" );
-
         }
-        buttonPlay.setEnabled(true);
-        buttonStop.setEnabled(false);
+        playerState = 0;
+        Log.d("PlayerState", playerState.toString());
+        setButtonsState();
     }
 
     private void setupShoutcastAddresses(){
@@ -128,20 +130,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-
-                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString() + "playerState = " + playerState.toString(), Toast.LENGTH_SHORT  ).show();
                 chosenChannel = parent.getItemAtPosition(position).toString();
                 //stop radio if playing
                 stopRadio();
-
                 initializeMP();
                 reloadSCInfo();
-
+                setButtonsState();
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
     }
@@ -153,17 +152,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
             public void run() {
 
                 try {
+
                     genereLabel = new ShoutcastParser().getStreamGenere(channelSCAddressHash.get(chosenChannel));
                     titleLabel = new ShoutcastParser().getStreamTitle(channelSCAddressHash.get(chosenChannel));
-
                     Log.d("KtoGRA?", genereLabel);
 
-
                 } catch (Exception e) {
+
                     e.printStackTrace();
                 }
-
-
             }
         });
 
@@ -176,6 +173,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    private void setButtonsState(){
+
+        if ( playerState == 0 ) {
+            buttonPlay.setEnabled(true);
+            buttonStop.setEnabled(false);
+        } else if ( playerState == 1 ) {
+            buttonPlay.setEnabled(false);
+            buttonStop.setEnabled(true);
+        }
+
     }
 
 }

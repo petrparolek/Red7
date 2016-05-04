@@ -18,18 +18,18 @@ package eu.tomaka.radiored7.helpers;
  */
 
 
-        import java.net.URI;
-        import java.net.URISyntaxException;
-        import java.util.ArrayList;
-        import java.util.HashMap;
-        import java.util.List;
-        import java.util.Map;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-        import net.moraleboost.streamscraper.ScrapeException;
-        import net.moraleboost.streamscraper.Scraper;
-        import net.moraleboost.streamscraper.Stream;
-        import net.moraleboost.streamscraper.scraper.IceCastScraper;
-        import net.moraleboost.streamscraper.scraper.ShoutCastScraper;
+import net.moraleboost.streamscraper.ScrapeException;
+import net.moraleboost.streamscraper.Scraper;
+import net.moraleboost.streamscraper.Stream;
+import net.moraleboost.streamscraper.scraper.IceCastScraper;
+import net.moraleboost.streamscraper.scraper.ShoutCastScraper;
 
 /**
  * ShoutCastMetadataRetriever class provides a unified interface for retrieving
