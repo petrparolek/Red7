@@ -4,4 +4,5 @@
     <string name="channel">Wybierz kanał</string>
     <string name="streamGenere">GRA:</string>
     <string name="streamTitle">AUDYCJA:</string>
+    <string name="sendGreetings">Wyślij pozdrowienia</string>
 </resources>

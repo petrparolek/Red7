@@ -278,6 +278,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="channel">Choose channel</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="sendGreetings">Send greetings</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="streamGenere">DJ:</string>
     <string name="streamTitle">TITLE:</string>

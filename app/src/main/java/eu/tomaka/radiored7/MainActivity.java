@@ -2,10 +2,16 @@ package eu.tomaka.radiored7;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -20,12 +26,14 @@ import java.util.HashMap;
 import java.util.List;
 
 import eu.tomaka.radiored7.helpers.ShoutcastParser;
+import eu.tomaka.radiored7.helpers.ModifiedWebView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
     private MediaPlayer mp = new MediaPlayer();
     private Button buttonPlay;
     private Button buttonStop;
+    private Button buttonSendGreetings;
     private Spinner spinnerRaioChannel;
     private HashMap<String, String> channelSCAddressHash = new HashMap<String, String>();
     private String chosenChannel = "Główny";
@@ -42,10 +50,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
         buttonStop = (Button) findViewById(R.id.buttonStop);
+        buttonSendGreetings = (Button) findViewById(R.id.buttonSendGreetings);
         streamGenre = (TextView) findViewById(R.id.textViewStreamGenere);
         streamTitle = (TextView) findViewById(R.id.textViewStreamTitle);
         buttonPlay.setOnClickListener(this);
         buttonStop.setOnClickListener(this);
+        buttonSendGreetings.setOnClickListener(this);
         setButtonsState();
         setupShoutcastAddresses();
 
@@ -82,6 +92,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
             startRadio();
         } else if (v == buttonStop) {
             stopRadio();
+        } else if (v == buttonSendGreetings) {
+            Log.d("Red7", "tutaj");
+
+            startGreetingsWebView();
         }
     }
 
@@ -150,7 +164,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString() + "playerState = " + playerState.toString(), Toast.LENGTH_SHORT  ).show();
+                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString() + "playerState = " + playerState.toString(), Toast.LENGTH_SHORT).show();
                 chosenChannel = parent.getItemAtPosition(position).toString();
                 //stop radio if playing
                 stopRadio();
@@ -205,6 +219,42 @@ public class MainActivity extends Activity implements View.OnClickListener {
             buttonStop.setEnabled(true);
         }
 
+    }
+
+    private void startGreetingsWebView(){
+        Log.d("Red7", "tutaj");
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle(getString(R.string.sendGreetings) + " " + getString(R.string.channel) + " " + chosenChannel);
+
+        ModifiedWebView wv = new ModifiedWebView(this);
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        if(chosenChannel.equals("Główny")) {
+            wv.loadUrl("http://panel.radiors.pl/pozdro.php?kanal=glowny");
+        } else if (chosenChannel.equals("Fly")) {
+            wv.loadUrl("http://panel.radiors.pl/pozdro.php?kanal=fly");
+        } else if (chosenChannel.equals("Disco-Polo")) {
+            wv.loadUrl("http://panel.radiors.pl/pozdro.php?kanal=disco");
+        }
+        wv.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+
+                return true;
+            }
+        });
+
+        alert.setView(wv);
+        alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+            }
+        });
+        alert.show();
     }
 
 

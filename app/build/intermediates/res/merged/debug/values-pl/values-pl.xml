@@ -22,6 +22,7 @@
     <string name="action_settings">Ustawienia</string>
     <string name="app_name">Radio Red7</string>
     <string name="channel">Wybierz kanał</string>
+    <string name="sendGreetings">Wyślij pozdrowienia</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="streamGenere">GRA:</string>
     <string name="streamTitle">AUDYCJA:</string>

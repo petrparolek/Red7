@@ -239,14 +239,7 @@
                     "endOffset": 2077
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 64,
-                        "endColumn": 54,
-                        "endOffset": 114
-                    }
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
                 }
             },
             {
@@ -258,14 +251,7 @@
                     "endOffset": 2125
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
-                    "position": {
-                        "startLine": 1,
-                        "startColumn": 4,
-                        "startOffset": 16,
-                        "endColumn": 47,
-                        "endOffset": 59
-                    }
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
                 }
             },
             {
@@ -277,14 +263,7 @@
                     "endOffset": 2175
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 119,
-                        "endColumn": 49,
-                        "endOffset": 164
-                    }
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
                 }
             },
             {
@@ -292,8 +271,27 @@
                     "startLine": 24,
                     "startColumn": 4,
                     "startOffset": 2180,
+                    "endColumn": 61,
+                    "endOffset": 2237
+                },
+                "from": {
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 264,
+                        "endColumn": 61,
+                        "endOffset": 321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2242,
                     "endColumn": 100,
-                    "endOffset": 2276
+                    "endOffset": 2338
                 },
                 "from": {
                     "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
@@ -301,40 +299,26 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2281,
+                    "startOffset": 2343,
                     "endColumn": 45,
-                    "endOffset": 2322
+                    "endOffset": 2384
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 169,
-                        "endColumn": 45,
-                        "endOffset": 210
-                    }
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2327,
+                    "startOffset": 2389,
                     "endColumn": 48,
-                    "endOffset": 2371
+                    "endOffset": 2433
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 215,
-                        "endColumn": 48,
-                        "endOffset": 259
-                    }
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
                 }
             }
         ]

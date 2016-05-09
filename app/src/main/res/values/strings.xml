@@ -4,4 +4,5 @@
     <string name="channel">Choose channel</string>
     <string name="streamGenere">DJ:</string>
     <string name="streamTitle">TITLE:</string>
+    <string name="sendGreetings">Send greetings</string>
 </resources>
