@@ -19,5 +19,10 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Udostępnij dla"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Udostępnij dla %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zwiń"</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="app_name">Radio Red7</string>
+    <string name="channel">Wybierz kanał</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="streamGenere">GRA:</string>
+    <string name="streamTitle">AUDYCJA:</string>
 </resources>

@@ -48,8 +48,27 @@ public class MainActivity extends Activity implements View.OnClickListener {
         buttonStop.setOnClickListener(this);
         setButtonsState();
         setupShoutcastAddresses();
-        reloadSCInfo();
 
+        //new thread to update stream title and genre every 30 seconds
+        Thread t = new Thread() {
+
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Log.d("Red7", "update genre");
+                                reloadSCInfo();
+                            }
+                        });
+                        Thread.sleep(30000);
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        };
+        t.start();
     }
 
 
@@ -90,6 +109,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
         playerState = 1;
         Log.d("PlayerState", playerState.toString());
+
         setButtonsState();
     }
 
@@ -186,5 +206,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
 
     }
+
 
 }

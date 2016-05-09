@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Radio Red7</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="channel">Wybierz kanał</string>
+    <string name="streamGenere">GRA:</string>
+    <string name="streamTitle">AUDYCJA:</string>
+</resources>
