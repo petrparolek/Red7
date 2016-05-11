@@ -5,4 +5,7 @@
     <string name="streamGenere">DJ:</string>
     <string name="streamTitle">TITLE:</string>
     <string name="sendGreetings">Send greetings</string>
+    <string name="buffering">Buffering</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="seeSchedule">See schedule</string>
 </resources>

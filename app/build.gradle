@@ -27,4 +27,5 @@ dependencies {
     compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
     compile files('streamscraper.jar')
     compile files('jsoup-1.7.2.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
 }

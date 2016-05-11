@@ -5,4 +5,7 @@
     <string name="streamGenere">GRA:</string>
     <string name="streamTitle">AUDYCJA:</string>
     <string name="sendGreetings">Wyślij pozdrowienia</string>
+    <string name="buffering">Buforowanie</string>
+    <string name="pleaseWait">Proszę czekać...</string>
+    <string name="seeSchedule">Zobacz ramówkę</string>
 </resources>

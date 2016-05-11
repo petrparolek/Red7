@@ -3,8 +3,10 @@ package eu.tomaka.radiored7;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -19,6 +21,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,7 +36,7 @@ import eu.tomaka.radiored7.helpers.ModifiedWebView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    private MediaPlayer mp = new MediaPlayer();
+    private MediaPlayer mp;
     private Button buttonPlay;
     private Button buttonStop;
     private Button buttonSendGreetings;
@@ -42,6 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private String genereLabel;
     private String titleLabel;
     private Integer playerState = 0; // 0 = Stopped; 1 = Playing; 2 = Paused (currently not used)
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +106,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    private void initializeMP(){
+    private void initializeMP() {
         mp = new MediaPlayer();
         try {
             mp.setDataSource(channelSCAddressHash.get(chosenChannel));
@@ -111,52 +118,59 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
     private void startRadio() {
+
         Log.d("Red7", "Radio started");
 
+        final ProgressDialog progress = new ProgressDialog(this);
+        progress.setTitle(getString(R.string.buffering));
+        progress.setMessage(getString(R.string.pleaseWait));
+        progress.show();
         initializeMP();
         mp.prepareAsync();
         mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
 
             public void onPrepared(MediaPlayer mp) {
                 MainActivity.this.mp.start();
+                progress.dismiss();
+
             }
         });
         playerState = 1;
         Log.d("PlayerState", playerState.toString());
-
         setButtonsState();
+
     }
 
     private void stopRadio() {
-        Log.d("Red7", "Stop pressed" );
+        Log.d("Red7", "Stop pressed");
 
         try {
             if (mp.isPlaying()) {
                 mp.stop();
                 mp.release();
             }
-        }
-        catch(Exception e) {
-            Log.d("Red7", "Media player has alredy been released - do nothing" );
+        } catch (Exception e) {
+            Log.d("Red7", "Media player has alredy been released - do nothing");
         }
         playerState = 0;
         Log.d("PlayerState", playerState.toString());
         setButtonsState();
     }
 
-    private void setupShoutcastAddresses(){
+    private void setupShoutcastAddresses() {
         channelSCAddressHash.put("Główny", "http://sluchaj.radiors.pl:19182");
         channelSCAddressHash.put("Fly", "http://sluchaj.radiors.pl:19204");
         channelSCAddressHash.put("Disco-Polo", "http://sluchaj.radiors.pl:19206");
         List<String> channelList = new ArrayList(channelSCAddressHash.keySet());
-        Collections.sort(channelList,Collections.reverseOrder());
+        Collections.sort(channelList, Collections.reverseOrder());
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
-                (this, R.layout.custom_spinner ,channelList);
+                (this, R.layout.custom_spinner, channelList);
         spinnerRaioChannel.setAdapter(dataAdapter);
         addListenerOnSpinnerItemSelection();
 
     }
-    public void addListenerOnSpinnerItemSelection(){
+
+    public void addListenerOnSpinnerItemSelection() {
 
         spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
         spinnerRaioChannel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -179,9 +193,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
     }
 
-    private void reloadSCInfo(){
+    private void reloadSCInfo() {
 
-        Thread thread = new Thread(new Runnable(){
+        Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
 
@@ -201,27 +215,27 @@ public class MainActivity extends Activity implements View.OnClickListener {
         thread.start();
         try {
             thread.join();
-            streamGenre.setText(getString(R.string.streamGenere)+" "+genereLabel);
-            streamTitle.setText(getString(R.string.streamTitle)+" "+titleLabel);
+            streamGenre.setText(getString(R.string.streamGenere) + " " + genereLabel);
+            streamTitle.setText(getString(R.string.streamTitle) + " " + titleLabel);
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    private void setButtonsState(){
+    private void setButtonsState() {
 
-        if ( playerState == 0 ) {
+        if (playerState == 0) {
             buttonPlay.setEnabled(true);
             buttonStop.setEnabled(false);
-        } else if ( playerState == 1 ) {
+        } else if (playerState == 1) {
             buttonPlay.setEnabled(false);
             buttonStop.setEnabled(true);
         }
 
     }
 
-    private void startGreetingsWebView(){
+    private void startGreetingsWebView() {
         Log.d("Red7", "tutaj");
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -231,7 +245,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        if(chosenChannel.equals("Główny")) {
+        if (chosenChannel.equals("Główny")) {
             wv.loadUrl("http://panel.radiors.pl/pozdro.php?kanal=glowny");
         } else if (chosenChannel.equals("Fly")) {
             wv.loadUrl("http://panel.radiors.pl/pozdro.php?kanal=fly");
