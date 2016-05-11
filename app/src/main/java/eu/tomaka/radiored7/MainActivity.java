@@ -40,6 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button buttonPlay;
     private Button buttonStop;
     private Button buttonSendGreetings;
+    private Button buttonSeeSchedule;
     private Spinner spinnerRaioChannel;
     private HashMap<String, String> channelSCAddressHash = new HashMap<String, String>();
     private String chosenChannel = "Główny";
@@ -58,11 +59,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
         buttonStop = (Button) findViewById(R.id.buttonStop);
         buttonSendGreetings = (Button) findViewById(R.id.buttonSendGreetings);
+        buttonSeeSchedule = (Button) findViewById(R.id.buttonSeeSchedule);
         streamGenre = (TextView) findViewById(R.id.textViewStreamGenere);
         streamTitle = (TextView) findViewById(R.id.textViewStreamTitle);
         buttonPlay.setOnClickListener(this);
         buttonStop.setOnClickListener(this);
         buttonSendGreetings.setOnClickListener(this);
+        buttonSeeSchedule.setOnClickListener(this);
         setButtonsState();
         setupShoutcastAddresses();
 
@@ -100,9 +103,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else if (v == buttonStop) {
             stopRadio();
         } else if (v == buttonSendGreetings) {
-            Log.d("Red7", "tutaj");
-
             startGreetingsWebView();
+        } else if (v == buttonSeeSchedule) {
+            startScheduleWebView();
         }
     }
 
@@ -262,12 +265,35 @@ public class MainActivity extends Activity implements View.OnClickListener {
         });
 
         alert.setView(wv);
-        alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+        alert.show();
+    }
+    private void startScheduleWebView() {
+        Log.d("Red7", "tutaj");
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle(getString(R.string.Schedule) + " " + getString(R.string.channel) + " " + chosenChannel);
+
+        ModifiedWebView wv = new ModifiedWebView(this);
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        if (chosenChannel.equals("Główny")) {
+            wv.loadUrl("http://panel.radiors.pl/ramowka.php?kanal=glowny");
+        } else if (chosenChannel.equals("Fly")) {
+            wv.loadUrl("http://panel.radiors.pl/ramowka.php?kanal=fly");
+        } else if (chosenChannel.equals("Disco-Polo")) {
+            wv.loadUrl("http://panel.radiors.pl/ramowka.php?kanal=disco");
+        }
+        wv.setWebViewClient(new WebViewClient() {
             @Override
-            public void onClick(DialogInterface dialog, int id) {
-                dialog.dismiss();
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+
+                return true;
             }
         });
+
+        alert.setView(wv);
         alert.show();
     }
 

@@ -8,4 +8,5 @@
     <string name="buffering">Buffering</string>
     <string name="pleaseWait">Please wait...</string>
     <string name="seeSchedule">See schedule</string>
+    <string name="Schedule">Schedule</string>
 </resources>

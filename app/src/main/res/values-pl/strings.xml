@@ -8,4 +8,6 @@
     <string name="buffering">Buforowanie</string>
     <string name="pleaseWait">Proszę czekać...</string>
     <string name="seeSchedule">Zobacz ramówkę</string>
+    <string name="Schedule">Ramówka</string>
+
 </resources>
