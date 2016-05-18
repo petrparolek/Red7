@@ -4,12 +4,14 @@ package eu.tomaka.radiored7;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -19,11 +21,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,6 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private String genereLabel;
     private String titleLabel;
     private Integer playerState = 0; // 0 = Stopped; 1 = Playing; 2 = Paused (currently not used)
+    private HeadphoneUnplugReceiver mHeadphoneUnplugReceiver;
 
 
     @Override
@@ -68,6 +66,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         buttonSeeSchedule.setOnClickListener(this);
         setButtonsState();
         setupShoutcastAddresses();
+
+        // Listen for headphone unplug
+        IntentFilter headphoneUnplugIntentFilter = new IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY);
+        mHeadphoneUnplugReceiver = new HeadphoneUnplugReceiver();
+        registerReceiver(mHeadphoneUnplugReceiver, headphoneUnplugIntentFilter);
 
         //new thread to update stream title and genre every 30 seconds
         Thread t = new Thread() {
@@ -89,6 +92,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         };
         t.start();
+    }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        //unregister headphone unplug
+        this.unregisterReceiver(mHeadphoneUnplugReceiver);
     }
 
 
@@ -181,7 +193,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(parent.getContext(), "Wybrano kanał: " + parent.getItemAtPosition(position).toString() + "playerState = " + playerState.toString(), Toast.LENGTH_SHORT).show();
                 chosenChannel = parent.getItemAtPosition(position).toString();
                 //stop radio if playing
                 stopRadio();
@@ -297,5 +308,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
         alert.show();
     }
 
+
+    public class HeadphoneUnplugReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (playerState==1 && AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction())) {
+                Log.v("Red7", "Headphones unplugged. Stopping playback.");
+            }
+        }
+    }
 
 }
