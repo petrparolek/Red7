@@ -163,13 +163,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
             if (mp.isPlaying()) {
                 mp.stop();
                 mp.release();
+                playerState = 0;
+                Log.d("PlayerState", playerState.toString());
+                setButtonsState();
             }
         } catch (Exception e) {
             Log.d("Red7", "Media player has alredy been released - do nothing");
         }
-        playerState = 0;
-        Log.d("PlayerState", playerState.toString());
-        setButtonsState();
+
     }
 
     private void setupShoutcastAddresses() {
