@@ -315,6 +315,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         public void onReceive(Context context, Intent intent) {
             if (playerState==1 && AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction())) {
                 Log.v("Red7", "Headphones unplugged. Stopping playback.");
+                stopRadio();
             }
         }
     }
