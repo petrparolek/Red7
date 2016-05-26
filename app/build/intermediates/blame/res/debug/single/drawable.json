@@ -24,6 +24,10 @@
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
     },
     {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/pause.png",
+        "source": "/home/tomek/Projekty/Red7/app/src/main/res/drawable/pause.png"
+    },
+    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/background.xml",
         "source": "/home/tomek/Projekty/Red7/app/src/main/res/drawable/background.xml"
     },
@@ -48,8 +52,16 @@
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/spinner.xml",
+        "source": "/home/tomek/Projekty/Red7/app/src/main/res/drawable/spinner.xml"
+    },
+    {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/play.png",
+        "source": "/home/tomek/Projekty/Red7/app/src/main/res/drawable/play.png"
     },
     {
         "merged": "/home/tomek/Projekty/Red7/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",

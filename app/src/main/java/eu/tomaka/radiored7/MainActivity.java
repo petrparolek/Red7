@@ -19,6 +19,7 @@ import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -45,6 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView streamTitle;
     private String genereLabel;
     private String titleLabel;
+    private ImageView imageViewPlayPause;
     private Integer playerState = 0; // 0 = Stopped; 1 = Playing; 2 = Paused (currently not used)
     private HeadphoneUnplugReceiver mHeadphoneUnplugReceiver;
 
@@ -54,14 +56,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         spinnerRaioChannel = (Spinner) findViewById(R.id.spinnerRaioChannel);
-        buttonPlay = (Button) findViewById(R.id.buttonPlay);
-        buttonStop = (Button) findViewById(R.id.buttonStop);
+
+        imageViewPlayPause = (ImageView) findViewById(R.id.imageViewPlayPause);
         buttonSendGreetings = (Button) findViewById(R.id.buttonSendGreetings);
         buttonSeeSchedule = (Button) findViewById(R.id.buttonSeeSchedule);
         streamGenre = (TextView) findViewById(R.id.textViewStreamGenere);
         streamTitle = (TextView) findViewById(R.id.textViewStreamTitle);
-        buttonPlay.setOnClickListener(this);
-        buttonStop.setOnClickListener(this);
+
+        imageViewPlayPause.setOnClickListener(this);
         buttonSendGreetings.setOnClickListener(this);
         buttonSeeSchedule.setOnClickListener(this);
         setButtonsState();
@@ -110,9 +112,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        if (v == buttonPlay) {
+        if (v == imageViewPlayPause && playerState == 0) {
             startRadio();
-        } else if (v == buttonStop) {
+        } else if (v == imageViewPlayPause && playerState == 1) {
             stopRadio();
         } else if (v == buttonSendGreetings) {
             startGreetingsWebView();
@@ -241,11 +243,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private void setButtonsState() {
 
         if (playerState == 0) {
-            buttonPlay.setEnabled(true);
-            buttonStop.setEnabled(false);
+            imageViewPlayPause.setImageResource(R.drawable.play);
         } else if (playerState == 1) {
-            buttonPlay.setEnabled(false);
-            buttonStop.setEnabled(true);
+            imageViewPlayPause.setImageResource(R.drawable.pause);
+
         }
 
     }
@@ -309,7 +310,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         alert.show();
     }
 
-
+    //TODO: Move class to different file
     public class HeadphoneUnplugReceiver extends BroadcastReceiver {
 
         @Override

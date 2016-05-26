@@ -35,7 +35,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorBackground2"
+                android:background="@drawable/background"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -90,49 +90,59 @@
                     android:spinnerMode="dropdown"
                     android:textStyle="bold"
                     android:backgroundTint="@color/colorBackground2"
-                    android:popupBackground="#FFAABB"
-                    android:background="@color/colorBackground"
+                    android:background="@drawable/spinner"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="0.8" />
+                    android:layout_weight="0.8"/>
             </LinearLayout>
 
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="1">
 
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Play"
-                    android:id="@+id/buttonPlay"
-                    android:layout_gravity="center_horizontal" />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stop"
-                    android:id="@+id/buttonStop"
-                    android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:layout_width="143dp"
+                    android:layout_height="94dp"
+                    android:id="@+id/imageViewPlayPause"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.01" />
+
+
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingTop="40dp">
+                android:layout_height="wrap_content"
+                android:gravity="center">
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sendGreetings"
-                    android:id="@+id/buttonSendGreetings"/>
+                    android:id="@+id/buttonSendGreetings"
+                    android:textColor="@color/colorText"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/colorText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/seeSchedule"
-                    android:id="@+id/buttonSeeSchedule"/>
+                    android:id="@+id/buttonSeeSchedule"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:background="@drawable/button"
+                    android:shadowColor="@color/colorText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"/>
             </LinearLayout>
         </TableLayout>
 
