@@ -22,6 +22,7 @@
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zwiń"</string>
     <string name="action_settings">Ustawienia</string>
     <string name="app_name">Radio Red7</string>
+    <string name="backToExit">Naciśnij wstecz jeszcze raz, aby zamknąć aplikację.</string>
     <string name="buffering">Buforowanie</string>
     <string name="channel">Wybierz kanał</string>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Aplikacja <ns1:g id="APP_NAME">%1$s</ns1:g> wymaga zaktualizowania aplikacji Android Wear."</string>

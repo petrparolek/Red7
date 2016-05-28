@@ -23,6 +23,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import net.moraleboost.streamscraper.ScrapeException;
 
@@ -99,7 +100,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
-
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -112,6 +112,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onPause() {
         super.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        if (playerState==1) {
+            stopRadio();
+            Toast.makeText(this, getString(R.string.backToExit),
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            stopRadio();
+            super.onBackPressed();
+        }
     }
 
     public void onClick(View v) {

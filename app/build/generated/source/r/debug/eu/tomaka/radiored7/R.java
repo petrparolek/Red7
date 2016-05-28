@@ -2480,12 +2480,13 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int action_settings=0x7f060033;
         public static final int app_name=0x7f060034;
-        public static final int appbar_scrolling_view_behavior=0x7f06003c;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f06003d;
-        public static final int auth_google_play_services_client_google_display_name=0x7f06003e;
-        public static final int buffering=0x7f060035;
-        public static final int channel=0x7f060036;
-        public static final int character_counter_pattern=0x7f06003f;
+        public static final int appbar_scrolling_view_behavior=0x7f06003d;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f06003e;
+        public static final int auth_google_play_services_client_google_display_name=0x7f06003f;
+        public static final int backToExit=0x7f060035;
+        public static final int buffering=0x7f060036;
+        public static final int channel=0x7f060037;
+        public static final int character_counter_pattern=0x7f060040;
         public static final int common_android_wear_notification_needs_update_text=0x7f060013;
         public static final int common_android_wear_update_text=0x7f060014;
         public static final int common_android_wear_update_title=0x7f060015;
@@ -2516,12 +2517,12 @@ containing a value of this type.
         public static final int common_google_play_services_updating_text=0x7f06002e;
         public static final int common_google_play_services_updating_title=0x7f06002f;
         public static final int common_open_on_phone=0x7f060030;
-        public static final int pleaseWait=0x7f060037;
-        public static final int seeSchedule=0x7f060038;
-        public static final int sendGreetings=0x7f060039;
+        public static final int pleaseWait=0x7f060038;
+        public static final int seeSchedule=0x7f060039;
+        public static final int sendGreetings=0x7f06003a;
         public static final int status_bar_notification_info_overflow=0x7f060031;
-        public static final int streamGenere=0x7f06003a;
-        public static final int streamTitle=0x7f06003b;
+        public static final int streamGenere=0x7f06003b;
+        public static final int streamTitle=0x7f06003c;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007f;
