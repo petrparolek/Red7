@@ -30,7 +30,14 @@
                     "endOffset": 261
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 115,
+                        "endOffset": 340
+                    }
                 }
             },
             {
@@ -42,7 +49,14 @@
                     "endOffset": 369
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 345,
+                        "endColumn": 107,
+                        "endOffset": 448
+                    }
                 }
             },
             {
@@ -54,7 +68,14 @@
                     "endOffset": 492
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 453,
+                        "endColumn": 122,
+                        "endOffset": 571
+                    }
                 }
             },
             {
@@ -66,7 +87,14 @@
                     "endOffset": 594
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 576,
+                        "endColumn": 101,
+                        "endOffset": 673
+                    }
                 }
             },
             {
@@ -78,7 +106,14 @@
                     "endOffset": 702
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 678,
+                        "endColumn": 107,
+                        "endOffset": 781
+                    }
                 }
             },
             {
@@ -90,7 +125,14 @@
                     "endOffset": 788
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 786,
+                        "endColumn": 85,
+                        "endOffset": 867
+                    }
                 }
             },
             {
@@ -102,7 +144,14 @@
                     "endOffset": 897
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 872,
+                        "endColumn": 108,
+                        "endOffset": 976
+                    }
                 }
             },
             {
@@ -114,7 +163,14 @@
                     "endOffset": 1016
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 981,
+                        "endColumn": 118,
+                        "endOffset": 1095
+                    }
                 }
             },
             {
@@ -126,7 +182,14 @@
                     "endOffset": 1094
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1100,
+                        "endColumn": 77,
+                        "endOffset": 1173
+                    }
                 }
             },
             {
@@ -138,7 +201,14 @@
                     "endOffset": 1171
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1178,
+                        "endColumn": 76,
+                        "endOffset": 1250
+                    }
                 }
             },
             {
@@ -150,7 +220,14 @@
                     "endOffset": 1253
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1255,
+                        "endColumn": 81,
+                        "endOffset": 1332
+                    }
                 }
             },
             {
@@ -162,7 +239,14 @@
                     "endOffset": 1362
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1337,
+                        "endColumn": 108,
+                        "endOffset": 1441
+                    }
                 }
             },
             {
@@ -174,7 +258,14 @@
                     "endOffset": 1471
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1446,
+                        "endColumn": 108,
+                        "endOffset": 1550
+                    }
                 }
             },
             {
@@ -186,7 +277,14 @@
                     "endOffset": 1570
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1555,
+                        "endColumn": 98,
+                        "endOffset": 1649
+                    }
                 }
             },
             {
@@ -198,7 +296,14 @@
                     "endOffset": 1679
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1654,
+                        "endColumn": 108,
+                        "endOffset": 1758
+                    }
                 }
             },
             {
@@ -210,7 +315,14 @@
                     "endOffset": 1790
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1763,
+                        "endColumn": 110,
+                        "endOffset": 1869
+                    }
                 }
             },
             {
@@ -222,7 +334,14 @@
                     "endOffset": 1898
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1874,
+                        "endColumn": 107,
+                        "endOffset": 1977
+                    }
                 }
             },
             {
@@ -234,7 +353,14 @@
                     "endOffset": 2021
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1982,
+                        "endColumn": 122,
+                        "endOffset": 2100
+                    }
                 }
             },
             {
@@ -246,7 +372,14 @@
                     "endOffset": 2117
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2105,
+                        "endColumn": 95,
+                        "endOffset": 2196
+                    }
                 }
             },
             {
@@ -258,7 +391,14 @@
                     "endOffset": 2172
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 64,
+                        "endColumn": 54,
+                        "endOffset": 114
+                    }
                 }
             },
             {
@@ -270,7 +410,14 @@
                     "endOffset": 2220
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 47,
+                        "endOffset": 59
+                    }
                 }
             },
             {
@@ -282,7 +429,14 @@
                     "endOffset": 2270
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 326,
+                        "endColumn": 49,
+                        "endOffset": 371
+                    }
                 }
             },
             {
@@ -294,7 +448,14 @@
                     "endOffset": 2320
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 119,
+                        "endColumn": 49,
+                        "endOffset": 164
+                    }
                 }
             },
             {
@@ -306,7 +467,14 @@
                     "endOffset": 2520
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 469,
+                        "endColumn": 203,
+                        "endOffset": 668
+                    }
                 }
             },
             {
@@ -318,7 +486,14 @@
                     "endOffset": 2723
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2617,
+                        "endColumn": 206,
+                        "endOffset": 2819
+                    }
                 }
             },
             {
@@ -330,7 +505,14 @@
                     "endOffset": 2839
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2291,
+                        "endColumn": 115,
+                        "endOffset": 2402
+                    }
                 }
             },
             {
@@ -342,7 +524,14 @@
                     "endOffset": 3116
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4513,
+                        "endColumn": 280,
+                        "endOffset": 4789
+                    }
                 }
             },
             {
@@ -354,7 +543,14 @@
                     "endOffset": 3241
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2037,
+                        "endColumn": 124,
+                        "endOffset": 2157
+                    }
                 }
             },
             {
@@ -366,7 +562,14 @@
                     "endOffset": 3441
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1833,
+                        "endColumn": 203,
+                        "endOffset": 2032
+                    }
                 }
             },
             {
@@ -378,7 +581,14 @@
                     "endOffset": 3564
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1710,
+                        "endColumn": 122,
+                        "endOffset": 1828
+                    }
                 }
             },
             {
@@ -390,7 +600,14 @@
                     "endOffset": 3740
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 826,
+                        "endColumn": 179,
+                        "endOffset": 1001
+                    }
                 }
             },
             {
@@ -402,7 +619,14 @@
                     "endOffset": 3868
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1582,
+                        "endColumn": 127,
+                        "endOffset": 1705
+                    }
                 }
             },
             {
@@ -414,7 +638,14 @@
                     "endOffset": 4090
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1131,
+                        "endColumn": 225,
+                        "endOffset": 1352
+                    }
                 }
             },
             {
@@ -426,7 +657,14 @@
                     "endOffset": 4311
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1357,
+                        "endColumn": 224,
+                        "endOffset": 1577
+                    }
                 }
             },
             {
@@ -438,7 +676,14 @@
                     "endOffset": 4436
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 1006,
+                        "endColumn": 124,
+                        "endOffset": 1126
+                    }
                 }
             },
             {
@@ -450,7 +695,14 @@
                     "endOffset": 4604
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3598,
+                        "endColumn": 167,
+                        "endOffset": 3761
+                    }
                 }
             },
             {
@@ -462,7 +714,14 @@
                     "endOffset": 4732
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3470,
+                        "endColumn": 127,
+                        "endOffset": 3593
+                    }
                 }
             },
             {
@@ -474,7 +733,14 @@
                     "endOffset": 4885
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 152,
+                        "endOffset": 821
+                    }
                 }
             },
             {
@@ -486,7 +752,14 @@
                     "endOffset": 5054
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3301,
+                        "endColumn": 168,
+                        "endOffset": 3465
+                    }
                 }
             },
             {
@@ -498,7 +771,14 @@
                     "endOffset": 5171
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3184,
+                        "endColumn": 116,
+                        "endOffset": 3296
+                    }
                 }
             },
             {
@@ -510,7 +790,14 @@
                     "endOffset": 5341
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 299,
+                        "endColumn": 169,
+                        "endOffset": 464
+                    }
                 }
             },
             {
@@ -522,7 +809,14 @@
                     "endOffset": 5470
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 128,
+                        "endOffset": 294
+                    }
                 }
             },
             {
@@ -534,7 +828,14 @@
                     "endOffset": 5633
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 4916,
+                        "endColumn": 162,
+                        "endOffset": 5074
+                    }
                 }
             },
             {
@@ -546,7 +847,14 @@
                     "endOffset": 5755
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 4794,
+                        "endColumn": 121,
+                        "endOffset": 4911
+                    }
                 }
             },
             {
@@ -558,7 +866,14 @@
                     "endOffset": 5896
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3766,
+                        "endColumn": 140,
+                        "endOffset": 3902
+                    }
                 }
             },
             {
@@ -570,7 +885,14 @@
                     "endOffset": 6166
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 4030,
+                        "endColumn": 273,
+                        "endOffset": 4299
+                    }
                 }
             },
             {
@@ -582,7 +904,14 @@
                     "endOffset": 6289
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3907,
+                        "endColumn": 122,
+                        "endOffset": 4025
+                    }
                 }
             },
             {
@@ -594,7 +923,14 @@
                     "endOffset": 6400
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4304,
+                        "endColumn": 110,
+                        "endOffset": 4410
+                    }
                 }
             },
             {
@@ -606,7 +942,14 @@
                     "endOffset": 6606
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2407,
+                        "endColumn": 209,
+                        "endOffset": 2612
+                    }
                 }
             },
             {
@@ -618,7 +961,14 @@
                     "endOffset": 6735
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2162,
+                        "endColumn": 128,
+                        "endOffset": 2286
+                    }
                 }
             },
             {
@@ -630,7 +980,14 @@
                     "endOffset": 6953
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2962,
+                        "endColumn": 221,
+                        "endOffset": 3179
+                    }
                 }
             },
             {
@@ -642,7 +999,14 @@
                     "endOffset": 7091
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2824,
+                        "endColumn": 137,
+                        "endOffset": 2957
+                    }
                 }
             },
             {
@@ -654,7 +1018,14 @@
                     "endOffset": 7189
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-pl/common_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4415,
+                        "endColumn": 97,
+                        "endOffset": 4508
+                    }
                 }
             },
             {
@@ -666,7 +1037,14 @@
                     "endOffset": 7245
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 376,
+                        "endColumn": 55,
+                        "endOffset": 427
+                    }
                 }
             },
             {
@@ -678,7 +1056,14 @@
                     "endOffset": 7300
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 432,
+                        "endColumn": 54,
+                        "endOffset": 482
+                    }
                 }
             },
             {
@@ -690,7 +1075,14 @@
                     "endOffset": 7362
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 264,
+                        "endColumn": 61,
+                        "endOffset": 321
+                    }
                 }
             },
             {
@@ -702,7 +1094,14 @@
                     "endOffset": 7463
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-pl/values-pl.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2201,
+                        "endColumn": 100,
+                        "endOffset": 2297
+                    }
                 }
             },
             {
@@ -714,7 +1113,14 @@
                     "endOffset": 7509
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 169,
+                        "endColumn": 45,
+                        "endOffset": 210
+                    }
                 }
             },
             {
@@ -726,7 +1132,14 @@
                     "endOffset": 7558
                 },
                 "from": {
-                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml"
+                    "file": "/home/tomek/Projekty/Red7/app/src/main/res/values-pl/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 215,
+                        "endColumn": 48,
+                        "endOffset": 259
+                    }
                 }
             }
         ]
