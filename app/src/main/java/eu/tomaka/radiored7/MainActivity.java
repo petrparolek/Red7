@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,7 +24,10 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import net.moraleboost.streamscraper.ScrapeException;
+
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -35,8 +39,6 @@ import eu.tomaka.radiored7.helpers.ModifiedWebView;
 public class MainActivity extends Activity implements View.OnClickListener {
 
     private MediaPlayer mp;
-    private Button buttonPlay;
-    private Button buttonStop;
     private Button buttonSendGreetings;
     private Button buttonSeeSchedule;
     private Spinner spinnerRaioChannel;
@@ -94,6 +96,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         };
         t.start();
+
     }
 
 
@@ -212,32 +215,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void reloadSCInfo() {
 
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
+        AsyncTaskRunner runner = new AsyncTaskRunner();
+        runner.execute();
 
-                try {
-
-                    genereLabel = new ShoutcastParser().getStreamGenere(channelSCAddressHash.get(chosenChannel));
-                    titleLabel = new ShoutcastParser().getStreamTitle(channelSCAddressHash.get(chosenChannel));
-                    Log.d("KtoGRA?", genereLabel);
-
-                } catch (Exception e) {
-
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        thread.start();
-        try {
-            thread.join();
-            streamGenre.setText(getString(R.string.streamGenere) + " " + genereLabel);
-            streamTitle.setText(getString(R.string.streamTitle) + " " + titleLabel);
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     private void setButtonsState() {
@@ -320,6 +300,33 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 stopRadio();
             }
         }
+    }
+
+    private class AsyncTaskRunner extends AsyncTask<String, String, String> {
+
+
+        @Override
+        protected String doInBackground(String... params) {
+            try {
+                genereLabel = new ShoutcastParser().getStreamGenere(channelSCAddressHash.get(chosenChannel));
+                titleLabel = new ShoutcastParser().getStreamTitle(channelSCAddressHash.get(chosenChannel));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (URISyntaxException e) {
+                e.printStackTrace();
+            } catch (ScrapeException e) {
+                e.printStackTrace();
+            }
+            return "ok";
+        }
+
+
+        @Override
+        protected void onPostExecute(String result) {
+            streamGenre.setText(getString(R.string.streamGenere) + " " + genereLabel);
+            streamTitle.setText(getString(R.string.streamTitle) + " " + titleLabel);
+        }
+
     }
 
 }
