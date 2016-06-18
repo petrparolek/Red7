@@ -46,8 +46,12 @@
                     android:id="@+id/textViewStreamGenere"
                     android:layout_gravity="center_horizontal"
                     android:singleLine="true"
-                    android:ellipsize="end"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
                     android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
                     android:layout_marginBottom="5dp"
                     android:textStyle="bold"
                     android:textColor="@color/colorText" />
@@ -60,11 +64,16 @@
                     android:id="@+id/textViewStreamTitle"
                     android:layout_gravity="center_horizontal"
                     android:singleLine="true"
-                    android:ellipsize="end"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
                     android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
                     android:layout_marginBottom="5dp"
                     android:textStyle="bold"
-                    android:textColor="@color/colorText"/>
+                    android:textColor="@color/colorText"
+                    android:longClickable="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -125,6 +134,7 @@
                         android:textColor="@color/colorText"
                         android:layout_marginBottom="5dp"
                         android:textSize="18sp"
+                        android:padding="4dp"
                         android:background="@drawable/button"
                         android:shadowColor="@color/colorText"
                         android:shadowDx="0"
@@ -137,6 +147,7 @@
                         android:id="@+id/buttonSeeSchedule"
                         android:textColor="@color/colorText"
                         android:textSize="18sp"
+                        android:padding="4dp"
                         android:background="@drawable/button"
                         android:shadowColor="@color/colorText"
                         android:shadowDx="0"
